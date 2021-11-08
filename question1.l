@@ -19,11 +19,11 @@ int main()
     yylex();
     total = words + digits;
 
-    {printf("%5d words",words); words = 0;};
+    printf("%5d words",words);
 
-    {printf("%5d digits",digits); digits = 0;};
+    printf("%5d digits",digits);
 
-    {printf("%5d total words",total);};
+    printf("%5d total words",total);
 
 
     stat("input.txt", &st);
