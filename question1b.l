@@ -15,19 +15,16 @@ int i;
       }
    }
 
-   printf("%s\n",yytext);
+   printf("%s",yytext);
    }
-   \n {printf("%s\n",yytext);}
+   \n {printf("%s",yytext);}
 %%
 
 int main()
 {
-   yyin = fopen("input.txt","r");
+   // yyin = fopen("input.txt","r");
    yylex();
    return 0;
 }
 
-int yywrap()
-{
-   return 1;
-}
+int yywrap(){}
